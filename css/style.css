@@ -14,11 +14,15 @@ body{
   clear: both;
 }
 
+#logo{
+  vertical-align: middle;
+}
+
 /* HEADER */
 
 header{
   position: fixed;
-  background-color: lightskyblue;
+  background-color: white;
   width: 100%;
   min-width: 1150px;
   height: 70px;
@@ -48,7 +52,6 @@ header{
 
 .nav, .nav ul li{
   display: inline-block;
-  vertical-align: middle;
   margin-right: 30px;
 }
 
@@ -74,12 +77,11 @@ header{
 section.full-view{
   background-color: #b4d0e7;
   width: 100%;
+  margin-bottom: 80px;
 }
 
 /* JUMBOTRON*/
 .jumbotron{
-  min-height: 726px;
-  max-height: 1000px;
   padding: 100px 80px 10px;
 }
 
@@ -106,6 +108,8 @@ section.full-view{
 
 .left-jumbo-bottom{
   width: 30%;
+  margin-right: 5%;
+  overflow: hidden;
 }
 
 .left-jumbo-bottom p{
@@ -115,7 +119,7 @@ section.full-view{
 }
 
 .right-jumbo-bottom{
-  width: 70%;
+  width: 65%;
 }
 
 .text-subscribe p{
@@ -125,6 +129,62 @@ section.full-view{
 .right-jumbo-bottom img{
   width: 100%;
 }
+
+/* MAIN  */
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container h2{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.check-business{
+  margin-bottom: 30px;
+}
+
+.check-business span{
+  margin-right: 15px;
+}
+
+.block-business{
+  min-width: 1000px;
+}
+
+.block{
+  display: inline-block;
+  width: calc(33,33% - 160px);
+  height: 700px;
+  border: 1px solid black;
+}
+
+.block-business .top-block{
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid black;
+}
+
+.block .middle-block{
+  padding: 20px 10px;
+}
+
+.middle-block h2{
+  margin-bottom: 20px;
+}
+
+.block-business .block.middle-box{
+  margin: 0 80px;
+}
+
+
+
+
+
+
 
 
 
