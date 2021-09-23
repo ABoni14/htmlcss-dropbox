@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
 .clearfix::after{
   content: '';
   display: table;
@@ -16,6 +20,7 @@ header{
   position: fixed;
   background-color: lightskyblue;
   width: 100%;
+  min-width: 1150px;
   height: 70px;
   line-height: 70px;
   padding: 0 20px;
@@ -25,11 +30,12 @@ header{
   border: 1px solid grey;
   padding: 5px 15px;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .blue-btn{
   color: white;
-  background-color: blue;
+  background-color: #0061ff;
 }
 
 .left-header{
@@ -64,5 +70,64 @@ header{
 #inizia{
   display: inline-block;
 }
+
+section.full-view{
+  background-color: #b4d0e7;
+  width: 100%;
+}
+
+/* JUMBOTRON*/
+.jumbotron{
+  min-height: 726px;
+  max-height: 1000px;
+  padding: 100px 80px 10px;
+}
+
+.top-jumbotron{
+  margin-bottom: 50px;
+}
+
+.top-jumbotron h2{
+  font-size: 90px;
+}
+
+.btn-jumbotron{
+  margin-bottom: 20px;
+}
+
+.ancora i{
+  color: black;
+  font-size: 40px;
+}
+
+.left-jumbo-bottom, .right-jumbo-bottom{
+  float: left;
+}
+
+.left-jumbo-bottom{
+  width: 30%;
+}
+
+.left-jumbo-bottom p{
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.right-jumbo-bottom{
+  width: 70%;
+}
+
+.text-subscribe p{
+  font-size: 14px;
+}
+
+.right-jumbo-bottom img{
+  width: 100%;
+}
+
+
+
+
 
 
