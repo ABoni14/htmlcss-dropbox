@@ -134,7 +134,7 @@ section.full-view{
 }
 
 .right-jumbo-bottom img{
-  width: 120%;
+  width: 107%;
 }
 
 /* MAIN  */
@@ -228,6 +228,10 @@ section.full-view{
 
 .bottom-block ul li{
   padding: 15px 0;
+}
+
+.bottom-block ul li:last-child{
+  padding-bottom: 90px;
 }
 
 /* BLOCK TEAM */
@@ -333,6 +337,19 @@ section.full-view{
 .operation-text p span{
   text-decoration: underline ;
 }
+
+.team-text{
+  width: 63%;
+}
+
+.team-text h2{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 150px;
+}
+
+
 
 
 
