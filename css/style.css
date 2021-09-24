@@ -379,9 +379,21 @@ section.full-view{
 }
 
 .aziende-dropbox-block{
+  position: relative;
+  top: 0;
+  left: 0;
   float: left;
   width: 50%;
   height: 250px;
+}
+
+.aziende-dropbox-block svg{
+  width: 50%;
+  fill: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .aziende-dropbox-block.green{
@@ -416,6 +428,37 @@ section.full-view{
   background-color: #fed830;
 }
 
+/* TRY DROPBOX */
+
+.try-dropbox{
+  background-color: #b4d0e7;
+  padding: 150px 0;
+  margin-bottom: 200px;
+}
+
+.try-dropbox-text{
+  float: left;
+  width: 60%;
+}
+
+.try-dropbox-text h2{
+  font-size: 50px;
+  font-weight: bold;
+  color: #61082c;
+}
+
+.try-dropbox-btn{
+  padding-top: 10px;
+  float: right;
+  width: 39%;
+}
+
+.try-dropbox-btn a{
+  background-color: white;
+  padding: 5px 50px;
+  border: none;
+  font-weight: bold;
+}
 
 
 
