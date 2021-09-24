@@ -233,6 +233,7 @@ section.full-view{
 /* BLOCK TEAM */
 .block-team{
   border: 1px solid black;
+  margin-bottom: 180px;
 }
 
 .block-team .top-block{
@@ -269,6 +270,51 @@ section.full-view{
 .btn.big-btn{
   padding: 5px 35px;
 }
+
+/* SEARCH PARTNER */
+.partner-dropbox{
+  margin-bottom: 130px;
+}
+
+.partner-dropbox .img-partner, .partner-dropbox .text-partner{
+  float: left;
+  width: 50%;
+}
+
+.partner-dropbox .img-partner img{
+  width: 100%;
+}
+
+.partner-dropbox .text-partner{
+  padding: 40px;
+}
+
+.text-partner h2{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-partner p{
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.white-btn{
+  color: black;
+  border: 1px solid black;
+}
+
+.operation-business h2{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
 
 
 
