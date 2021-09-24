@@ -28,6 +28,7 @@ header{
   height: 70px;
   line-height: 70px;
   padding: 0 20px;
+  z-index: 999;
 }
 
 .btn{
@@ -348,6 +349,84 @@ section.full-view{
   margin-bottom: 30px;
   margin-top: 150px;
 }
+
+.container .team-text a{
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+
+
+.aziende-dropbox{
+  background-color: #f5f5f5;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.aziende-dropbox-left, .aziende-dropbox-right{
+  width: 30%;
+  height: 100%;
+  background-color: blue;
+}
+
+.aziende-dropbox-left{
+  float: left;
+}
+
+.aziende-dropbox-right{
+  float: right;
+}
+
+.aziende-dropbox-block{
+  float: left;
+  width: 50%;
+  height: 250px;
+}
+
+.aziende-dropbox-block.green{
+  background-color: #a2d39b;
+}
+
+.aziende-dropbox-block.purples{
+  background-color: #61082c;
+}
+
+.aziende-dropbox-block.light-blue{
+  background-color: #1d93ce;
+}
+
+.aziende-dropbox-block.purple{
+  background-color: #f91c1d;
+}
+
+.aziende-dropbox-block.dark-red{
+  background-color: #d5021f;
+}
+
+.aziende-dropbox-block.light{
+  background-color: #b4d0e7;
+}
+
+.aziende-dropbox-block.blue{
+  background-color: #0d2481;
+}
+
+.aziende-dropbox-block.yellow{
+  background-color: #fed830;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
