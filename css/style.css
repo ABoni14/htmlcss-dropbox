@@ -433,7 +433,7 @@ section.full-view{
 .try-dropbox{
   background-color: #b4d0e7;
   padding: 150px 0;
-  margin-bottom: 200px;
+  margin-bottom: 130px;
 }
 
 .try-dropbox-text{
@@ -459,6 +459,64 @@ section.full-view{
   border: none;
   font-weight: bold;
 }
+
+.block-faq{
+  margin-bottom: 140px;
+}
+
+.faq h2{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.raw-faq{
+  padding: 25px 0;
+  border-top: 1px solid #000;
+}
+
+.raw-faq h3{
+  float: left;
+}
+
+.block-faq .raw-faq:last-child{
+  border-bottom: 1px solid #000;
+}
+
+.arrow-faq{
+  float: right;
+  padding-right: 20px;
+}
+
+/* FOOTER */
+footer{
+  background-color: black;
+  width: 100vw;
+  padding: 100px 180px;
+  color: white;
+}
+
+.block-footer{
+  float: left;
+  width: calc(100% / 5);
+}
+
+.block-footer h4{
+  margin-bottom: 13px;
+}
+
+.block-footer ul li{
+  padding: 5px 0;
+  list-style: none;
+}
+
+.block-footer ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
 
 
 
