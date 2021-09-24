@@ -310,6 +310,30 @@ section.full-view{
   margin-bottom: 50px;
 }
 
+.operation-card{
+  float: left;
+  width: calc(33.33% - 27px);
+  margin-bottom: 50px;
+}
+
+.operation-card.center{
+  margin: 0 40px;
+}
+
+.operation-img img{
+  width: 100%;
+}
+
+.operation-text h3{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.operation-text p span{
+  text-decoration: underline ;
+}
+
 
 
 
