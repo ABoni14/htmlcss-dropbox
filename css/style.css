@@ -83,7 +83,10 @@ section.full-view{
 
 /* JUMBOTRON*/
 .jumbotron{
-  padding: 100px 80px 10px;
+  padding: 100px 0px;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .top-jumbotron{
@@ -91,7 +94,7 @@ section.full-view{
 }
 
 .top-jumbotron h2{
-  font-size: 90px;
+  font-size: 65px;
 }
 
 .btn-jumbotron{
@@ -103,24 +106,27 @@ section.full-view{
   font-size: 40px;
 }
 
+.bottom-jumbotron{
+  margin: 0 auto;
+}
+
 .left-jumbo-bottom, .right-jumbo-bottom{
   float: left;
 }
 
 .left-jumbo-bottom{
-  width: 30%;
-  margin-right: 5%;
+  width: 25%;
   overflow: hidden;
 }
 
 .left-jumbo-bottom p{
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 40px;
 }
 
 .right-jumbo-bottom{
-  width: 65%;
+  width: 75%;
 }
 
 .text-subscribe p{
@@ -128,7 +134,7 @@ section.full-view{
 }
 
 .right-jumbo-bottom img{
-  width: 100%;
+  width: 120%;
 }
 
 /* MAIN  */
@@ -136,6 +142,7 @@ section.full-view{
 .container{
   width: 70%;
   margin: 0 auto;
+  max-width: 1060px;
 }
 
 /* BUSINESS BLOCK*/
@@ -143,7 +150,7 @@ section.full-view{
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 50px;
-  padding-top: 250px;
+  padding-top: 140px;
 }
 
 .check-business{
@@ -160,7 +167,7 @@ section.full-view{
  /* blocchi business */
 .block{
   float: left;
-  width: calc(33,33% - 40px);
+  width: calc(33.33% - 14px);
   border: 1px solid black;
 }
 
@@ -187,7 +194,7 @@ section.full-view{
 }
 
 .block .middle-block, .bottom-block{
-  padding: 20px;
+  padding: 25px;
 }
 
 .middle-block h2{
@@ -231,7 +238,40 @@ section.full-view{
 .block-team .top-block{
   text-align: center;
   padding: 15px 0;
+  border-bottom: 1px solid #000;
 }
+
+.bottom-block-team{
+  padding: 25px;
+}
+
+.left-b-team, .right-b-team{
+  float: left;
+}
+
+.left-b-team{
+  width: 70%;
+}
+
+.right-b-team{
+  width: 30%;
+}
+
+.left-b-team h3{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.left-b-team h4{
+  margin-bottom: 30px;
+}
+
+.btn.big-btn{
+  padding: 5px 35px;
+}
+
+
+
 
 
 
