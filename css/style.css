@@ -59,6 +59,7 @@ header{
 .nav, .nav ul li{
   display: inline-block;
   margin-right: 30px;
+  padding-left: 15px;
 }
 
 .line-nav:hover{
@@ -71,11 +72,13 @@ header{
 }
 
 .nav ul li a{
+  display: block;
   color: black;
   text-decoration: none;
   line-height: 70px;
-  padding-left: 15px;
   font-weight: 600;
+  margin-left: 20px;
+  z-index: 99;
 }
 
 #inizia{
@@ -93,9 +96,9 @@ section.full-view{
   display: none;
   position: fixed;;
   width: 15%;
-  margin-top: 2px;
-  background-color: #fff;
-  z-index: 98;
+  background-color: #f5f5f5;
+  z-index: -1;
+  margin-top: -2px;
 }
 
 .drop-down-nav li{
@@ -111,7 +114,7 @@ section.full-view{
 }
 
 .drop-down-nav li:hover{
-  background-color: #f5f5f5;
+  background-color: rgb(207, 207, 207);
 }
 /* //HEADER */
 
@@ -228,24 +231,12 @@ section.full-view{
   padding: 25px;
 }
 
-.middle-block h2{
+.middle-block .price-business, .middle-block h2{
   margin-bottom: 15px;
 }
 
-.middle-block .price-business{
-  margin-bottom: 15px;
-}
-
-.middle-block .date-business{
-  margin-bottom: 50px;
-}
-
-.utent-business, .storage-business{
-  margin-bottom: 20px;
-}
-
-.function-business, .try-business{
-  margin-bottom: 50px;
+.try-business{
+  margin: 30px 0;
 }
 
 .shopnow-business span{
@@ -257,24 +248,42 @@ section.full-view{
   margin-bottom: 25px;
 }
 
-.bottom-block ul li{
+.bottom-block ul li, .middle-block ul li{
   padding: 15px 0;
-}
-
-.bottom-block ul li{
   list-style: none;
   float: left;
 }
 
-.bottom-block ul li:before {
-  content: "\f00c";
-  padding-right: 5px;
-  color: #0061ff;
+.bottom-block ul li:before, .middle-block ul li:before {
   font-family: "Font Awesome 5 Free"; 
-  font-weight: 900; 
+  padding-right: 5px;
   float: left;
   padding-bottom: 5px;
 }
+
+.bottom-block ul li:before{
+  color: #0061ff;
+  font-weight: 900; 
+  content: "\f00c";
+}
+
+.utent-syb:before{
+  content: "\f007";
+}
+
+.storage-syb:before{
+  content: "\f07b";
+}
+
+.pen-syb:before{
+  content: "\f164";
+}
+
+.smile-syb::before{
+  content: "\f118";
+}
+
+
 /* //BUSINESS BLOCK*/
 
 /* BLOCK TEAM */
@@ -527,6 +536,7 @@ section.full-view{
 .raw-faq{
   padding: 25px 0;
   border-top: 1px solid #d9d9db;
+  cursor: pointer;
 }
 
 .raw-faq h3{
@@ -541,7 +551,6 @@ section.full-view{
   font-size: 14px;
   float: right;
   padding-right: 20px;
-  cursor: pointer;
   display: block;
 }
 
@@ -597,46 +606,15 @@ footer{
 .block-footer ul li a:hover{
   text-decoration: underline;
 }
-/* //FOOTER */
 
+.under-line-block{
+  width: 10%;
+  height: 100px;
+  border-bottom: 1px solid white;
+  margin-bottom: 40px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.page-language{
+  color: white;
+}
+/* /FOOTER */
