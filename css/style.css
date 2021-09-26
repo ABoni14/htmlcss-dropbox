@@ -1,3 +1,4 @@
+/* GLOBAL */
 *{
   margin: 0;
   padding: 0;
@@ -14,21 +15,12 @@ body{
   clear: both;
 }
 
-#logo{
-  vertical-align: middle;
+.float-l{
+  float: left;
 }
 
-/* HEADER */
-
-header{
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  min-width: 1150px;
-  height: 70px;
-  line-height: 70px;
-  padding: 0 20px;
-  z-index: 999;
+.float-r{
+  float: right;
 }
 
 .btn{
@@ -38,17 +30,30 @@ header{
   font-size: 18px;
 }
 
+.blue-btn:hover{
+  background-color: #3a85ff;
+}
+
+.white-btn:hover{
+  background-color: #f5f5f5;
+}
+/* //GLOBAL */
+
+/* HEADER */
+header{
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  min-width: 1250px;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 20px;
+  z-index: 999;
+}
+
 .blue-btn{
   color: white;
   background-color: #0061ff;
-}
-
-.left-header{
-  float: left;
-}
-
-.right-header{
-  float: right;
 }
 
 .nav, .nav ul li{
@@ -56,7 +61,7 @@ header{
   margin-right: 30px;
 }
 
-.nav ul li:hover{
+.line-nav:hover{
   border-bottom: 2px solid black;
 }
 
@@ -69,6 +74,8 @@ header{
   color: black;
   text-decoration: none;
   line-height: 70px;
+  padding-left: 15px;
+  font-weight: 600;
 }
 
 #inizia{
@@ -81,6 +88,33 @@ section.full-view{
   height: 900px;
   margin-bottom: 80px;
 }
+
+.drop-down-nav{
+  display: none;
+  position: fixed;;
+  width: 15%;
+  margin-top: 2px;
+  background-color: #fff;
+  z-index: 98;
+}
+
+.drop-down-nav li{
+  width: 100%;
+}
+
+.drop-down-nav li a{
+  font-weight:normal;
+}
+
+.nav ul li:hover .drop-down-nav{
+  display: block;
+}
+
+.drop-down-nav li:hover{
+  background-color: #f5f5f5;
+}
+/* //HEADER */
+
 
 /* JUMBOTRON*/
 .jumbotron{
@@ -111,10 +145,6 @@ section.full-view{
   margin: 0 auto;
 }
 
-.left-jumbo-bottom, .right-jumbo-bottom{
-  float: left;
-}
-
 .left-jumbo-bottom{
   width: 25%;
   overflow: hidden;
@@ -139,7 +169,6 @@ section.full-view{
 }
 
 /* MAIN  */
-
 .container{
   width: 70%;
   margin: 0 auto;
@@ -169,7 +198,8 @@ section.full-view{
 .block{
   float: left;
   width: calc(33.33% - 14px);
-  border: 1px solid black;
+  border: 1px solid #d9d9db;
+  padding-bottom: 80px;
 }
 
 .block-business{
@@ -191,7 +221,7 @@ section.full-view{
 .block-business .top-block{
   text-align: center;
   padding: 15px 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #d9d9db;
 }
 
 .block .middle-block, .bottom-block{
@@ -220,7 +250,7 @@ section.full-view{
 
 .shopnow-business span{
   padding-bottom: 40px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #d9d9db;
 }
 
 .bottom-block h4{
@@ -231,28 +261,36 @@ section.full-view{
   padding: 15px 0;
 }
 
-.bottom-block ul li:last-child{
-  padding-bottom: 90px;
+.bottom-block ul li{
+  list-style: none;
+  float: left;
 }
+
+.bottom-block ul li:before {
+  content: "\f00c";
+  padding-right: 5px;
+  color: #0061ff;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  float: left;
+  padding-bottom: 5px;
+}
+/* //BUSINESS BLOCK*/
 
 /* BLOCK TEAM */
 .block-team{
-  border: 1px solid black;
+  border: 1px solid #d9d9db;
   margin-bottom: 180px;
 }
 
 .block-team .top-block{
   text-align: center;
   padding: 15px 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #d9d9db;
 }
 
 .bottom-block-team{
   padding: 25px;
-}
-
-.left-b-team, .right-b-team{
-  float: left;
 }
 
 .left-b-team{
@@ -275,6 +313,7 @@ section.full-view{
 .btn.big-btn{
   padding: 5px 35px;
 }
+/* //BLOCK TEAM */
 
 /* SEARCH PARTNER */
 .partner-dropbox{
@@ -282,7 +321,6 @@ section.full-view{
 }
 
 .partner-dropbox .img-partner, .partner-dropbox .text-partner{
-  float: left;
   width: 50%;
 }
 
@@ -355,46 +393,60 @@ section.full-view{
   margin-bottom: 60px;
 }
 
-
-
+/* PARTNER BLOCK */
 .aziende-dropbox{
   background-color: #f5f5f5;
-  height: 500px;
   margin: 0;
   padding: 0;
+  height: 30vw;
+  margin-right: 0;
 }
 
 .aziende-dropbox-left, .aziende-dropbox-right{
-  width: 30%;
-  height: 100%;
-  background-color: blue;
-}
-
-.aziende-dropbox-left{
-  float: left;
-}
-
-.aziende-dropbox-right{
-  float: right;
+  height: 30vw;
+  width: 30vw;
 }
 
 .aziende-dropbox-block{
   position: relative;
   top: 0;
   left: 0;
+  width: 15vw;
+  height: 15vw;
   float: left;
-  width: 50%;
-  height: 250px;
 }
 
 .aziende-dropbox-block svg{
-  width: 50%;
-  fill: white;
+  width: 60%;
+  filter: invert(1);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.description-partner{
+  padding: 10px 50px;
+  width: 38vw;
+  height: 30vw;
+  overflow: auto;
+}
+
+.logo-partner{
+  width: 15%;
+  border-bottom: 1px solid #d3d3d5;
+}
+
+.logo-partner svg{
+  width: 200%;
+}
+
+.description-partner p{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
 
 .aziende-dropbox-block.green{
   background-color: #a2d39b;
@@ -427,9 +479,10 @@ section.full-view{
 .aziende-dropbox-block.yellow{
   background-color: #fed830;
 }
+/* //PARTNER BLOCK */
+
 
 /* TRY DROPBOX */
-
 .try-dropbox{
   background-color: #b4d0e7;
   padding: 150px 0;
@@ -437,7 +490,6 @@ section.full-view{
 }
 
 .try-dropbox-text{
-  float: left;
   width: 60%;
 }
 
@@ -449,7 +501,6 @@ section.full-view{
 
 .try-dropbox-btn{
   padding-top: 10px;
-  float: right;
   width: 39%;
 }
 
@@ -459,7 +510,10 @@ section.full-view{
   border: none;
   font-weight: bold;
 }
+/* //TRY DROPBOX */
 
+
+/* FAQ */
 .block-faq{
   margin-bottom: 140px;
 }
@@ -472,7 +526,7 @@ section.full-view{
 
 .raw-faq{
   padding: 25px 0;
-  border-top: 1px solid #000;
+  border-top: 1px solid #d9d9db;
 }
 
 .raw-faq h3{
@@ -480,18 +534,43 @@ section.full-view{
 }
 
 .block-faq .raw-faq:last-child{
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #d9d9db;
 }
 
 .arrow-faq{
+  font-size: 14px;
   float: right;
   padding-right: 20px;
+  cursor: pointer;
+  display: block;
 }
+
+.reply-faq{
+  display: none;
+  color: #687787;
+  margin-top: 55px;
+  font-weight: bold;
+  padding-right: 140px;
+}
+
+.raw-faq:active .reply-faq{
+  display: block;
+}
+
+.reply-faq:hover{
+  display: block;
+}
+
+.raw-faq:active .arrow-faq i{
+  transform: rotate(180deg);
+}
+/* //FAQ */
+
 
 /* FOOTER */
 footer{
   background-color: black;
-  width: 100vw;
+  width: 100%;
   padding: 100px 180px;
   color: white;
 }
@@ -514,6 +593,11 @@ footer{
   color: white;
   text-decoration: none;
 }
+
+.block-footer ul li a:hover{
+  text-decoration: underline;
+}
+/* //FOOTER */
 
 
 
