@@ -15,6 +15,12 @@ body{
   clear: both;
 }
 
+.container{
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1060px;
+}
+
 .float-l{
   float: left;
 }
@@ -65,6 +71,8 @@ header{
 .line-nav:hover{
   border-bottom: 2px solid black;
 }
+
+
 
 .left-header img{
   vertical-align: middle;
@@ -170,14 +178,9 @@ section.full-view{
 .right-jumbo-bottom img{
   width: 107%;
 }
+/* //JUMBOTRON*/
 
 /* MAIN  */
-.container{
-  width: 70%;
-  margin: 0 auto;
-  max-width: 1060px;
-}
-
 /* BUSINESS BLOCK*/
 .check-business h2{
   font-size: 50px;
@@ -219,6 +222,16 @@ section.full-view{
 
 .top-block h3{
   font-weight: 900;
+}
+
+.price-business{
+  font-weight: bold;
+}
+
+.date-business{
+  color: #7f8c98;
+  font-weight: 600;
+  padding-bottom: 50px;
 }
 
 .block-business .top-block{
@@ -271,6 +284,10 @@ section.full-view{
   content: "\f007";
 }
 
+.utent-black-syb::before{
+  content: "\f500";
+}
+
 .storage-syb:before{
   content: "\f07b";
 }
@@ -282,8 +299,6 @@ section.full-view{
 .smile-syb::before{
   content: "\f118";
 }
-
-
 /* //BUSINESS BLOCK*/
 
 /* BLOCK TEAM */
